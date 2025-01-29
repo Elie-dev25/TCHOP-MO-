@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Testapp</string>
+    <string name="bienvenue_chez_tchop_mo">Bienvenue chez TCHOP\'MO</string>
+    <string name="v_g_tarienne">Végétarienne</string>
+    <string name="tchop_mo">TCHOP\'MO</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="_4_fromages">4 Fromages</string>
+    <string name="margherita">Margherita</string>
+    <string name="nos_meilleures_pizzas">Nos Meilleures Pizzas</string>
+    <string name="clients_satisfaits">5000+ Clients satisfaits</string>
+    <string name="statistiques">statistiques</string>
+    <string name="localisation">localisation</string>
+    <string name="jean_dupont"> Jean Dupont</string>
+    <string name="superbe_pizza_un_r_gal">Superbe pizza! Un régal! Et le service est très rapide.</string>
+    <string name="avis_clients">avis clients</string>
+    <string name="adress">Rue bordo Avenue du 50eme. 123 Roubio</string>
+    <string name="pizza_airfryer">Pizza Airfryer</string>
 </resources>
