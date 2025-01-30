@@ -1,6 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/cartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon Panier"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Liste des pizzas ajoutées statiquement -->
+        <include layout="@layout/item_pizza"/>
+
+        <include layout="@layout/item_pizza"
+            android:id="@+id/pizza1"
+            android:tag="Pizza Feu de Bois"
+            android:background="@drawable/fbpizza"/>
+
+        <include layout="@layout/item_pizza"
+            android:id="@+id/pizza2"
+            android:tag="Pizza Peperoni"
+            android:background="@drawable/pepizza"/>
+
+        <include layout="@layout/item_pizza"
+            android:id="@+id/pizza3"
+            android:tag="Pizza Jambon"
+            android:background="@drawable/jpizza"/>
+
+        <!-- Conteneur du prix total -->
+        <LinearLayout
+            android:id="@+id/totalPriceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/totalPriceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="54.96 €"
+                android:textSize="18sp"
+                android:textColor="@color/orange"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

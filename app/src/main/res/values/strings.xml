@@ -15,4 +15,7 @@
     <string name="avis_clients">avis clients</string>
     <string name="adress">Rue bordo Avenue du 50eme. 123 Roubio</string>
     <string name="pizza_airfryer">Pizza Airfryer</string>
+    <string name="mon_panier">Mon Panier</string>
+    <string name="commander_tout_le_panier">Commander tout le panier</string>
+    <string name="total_12_99">Total : 12.99 €</string>
 </resources>
