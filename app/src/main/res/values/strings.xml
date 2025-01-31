@@ -18,4 +18,19 @@
     <string name="mon_panier">Mon Panier</string>
     <string name="commander_tout_le_panier">Commander tout le panier</string>
     <string name="total_12_99">Total : 12.99 €</string>
+    <string name="nom_de_la_pizza">Nom de la Pizza</string>
+    <string name="command_le_30_01_2025">Commandé le: 30/01/2025</string>
+    <string name="livraison_pr_vue_19_30">Livraison prévue: 19:30</string>
+    <string name="en_pr_paration">En préparation</string>
+    <string name="commandes_en_cours">Commandes en cours</string>
+    <string name="_12_50">12,50 €</string>
+    <string name="pizza_aux_peperonie">Pizza Aux peperonie</string>
+    <string name="historique_des_commandes">Historique des commandes</string>
+    <string name="pizza_quatre_fromages">Pizza Quatre Fromages</string>
+    <string name="command_le_29_01_2025">Commandé le: 29/01/2025</string>
+    <string name="livr_20_15">Livré à: 20:15</string>
+    <string name="livr">Livré</string>
+    <string name="_20_50">20,50 €</string>
+    <string name="command_le_31_01_1015">commandé le 31-01-1015</string>
+    <string name="livr_a_19_50">livré a 19:50</string>
 </resources>

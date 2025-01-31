@@ -1,12 +1,43 @@
 package com.example.testapp;
 
-import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import android.view.MenuItem;
 
-public class CartActivity extends Activity {
+public class CartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
+
+        BottomNavigationView bottomNav = findViewById(R.id.bottomNav);
+        bottomNav.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int itemId = item.getItemId();
+
+                if (itemId == R.id.nav_home) {
+                    startActivity(new Intent(CartActivity.this, MainActivity.class));
+                    finish();
+                    return true;
+                } else if (itemId == R.id.nav_menu) {
+                    startActivity(new Intent(CartActivity.this, MenuActivity.class));
+                    finish();
+                    return true;
+                } else if (itemId == R.id.nav_order) {
+                    startActivity(new Intent(CartActivity.this, OrderActivity.class));
+                    finish();
+                    return true;
+                } else if (itemId == R.id.nav_cart) {
+                    return true;
+                }
+                return false;
+            }
+        });
+
+        bottomNav.setSelectedItemId(R.id.nav_cart);
     }
 }
